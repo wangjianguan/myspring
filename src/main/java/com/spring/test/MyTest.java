@@ -31,9 +31,7 @@ public class MyTest {
     public void test3() {
 
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("/applicationContext.xml");
-
         B b = (B) classPathXmlApplicationContext.getBean("b");
-
         System.out.print(b.getA().getName());
     }
 
